@@ -194,7 +194,6 @@ if (WebInspector.InspectorFrontendHostStub) {
     (function () {
         var con = io.connect('http://localhost:8889');
         con.on('refresh', function (data) {
-            console.log(window);
             PageAgent.reload(false);
         });
     })();
